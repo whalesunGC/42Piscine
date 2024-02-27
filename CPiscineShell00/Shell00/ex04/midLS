@@ -1,1 +1,0 @@
-ls -lAt --ignore=".*" --format=commas --indicator-style=slash --classify
