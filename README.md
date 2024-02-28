@@ -28,3 +28,4 @@ Clock out time : 1930hrs
 
 -The diversity of the people in the Piscine is amazing. People self select for a crazy trial like this, feels like a std div difference in oddities and talent.
 
+Day 3!
