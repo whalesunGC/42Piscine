@@ -28,3 +28,9 @@ Clock out time : 2100hrs
 -Of note today **redacted** from Indo is a persistent coder. He goes deep and reads the man documents to understand how the code works. This is great because it forces deeper learning.    
 -F**redacted** damn son, I really clicked with him. There's this ease to the conversations that only army buddies can know. He knows his stuff too. 
 -T**Redacted** is amazing, super helpful and guided many fellow students through deep valleys of fog. He goes in first and uncovers the FOW for us. After that he does shy away from sharing, in fact he shares openly and willingly.   
+
+Day 4!  
+Clock in time: 0912hrs 
+Clock out time: 
+
+-running on 3.5hrs of sleep after the brutal bike ride home last night. Decided not to pursue this foolhardy path to an early grave :P. 
