@@ -18,6 +18,24 @@ At the end, the evaluator writes a comment.
 Both the evaluator and the evaluees review the evaluation sheet (including the comment) and click "submit" only if both the evaluees and the evaluator agree.   
 In the event that any established rules are not adhered to or are misused in any manner, appropriate sanctions will be enforced to maintain the integrity and fairness of the evaluations.  
 
+Introduction    
+introduction    
+Please respect the following rules: 
+- Remain polite, courteous, respectful and constructive 
+ throughout the evaluation process. The well-being of the community depends on it.  
+- Identify with the person (or the group) evaluated the eventual dysfunctions of the work. Take the time to discuss and debate the problems you have identified.    
+- You must consider that there might be some difference in how your peers might have understood the project's instructions and the scope of its functionalities. Always keep an open mind and grade him/her as honestly as possible. The pedagogy is valid only and only if peer-evaluation is conducted seriously. 
+Guidelines  
+- Only grade the work that is in the student or group's GiT repository. 
+- Double-check that the GiT repository belongs to the student or the group. Ensure that the work is for the relevant project and also check that "git clone" is used in an empty folder.    
+- Check carefully that no malicious aliases was used to fool you and make you evaluate something other than the content of the official repository. 
+- To avoid any surprises, carefully check that both the evaluating and the evaluated students have reviewed the possible scripts used to facilitate the grading.    
+- If the evaluating student has not completed that particular project yet, it is mandatory for this student to read the entire subject prior to starting the defence.   
+- Use the flags available on this scale to signal an empty repository, non-functioning program, a norm error, cheating etc. In these cases, the grading is over and the final grade is 0 (or -42 in case of cheating). However, with the exception of cheating, you are encouraged to continue to discuss your work (even if you have not finished it) in order to identify any issues that may have caused this failure and avoid repeating the same mistake in the future.
+- Remember that for the duration of the defence, no segfault, no other unexpected, premature, uncontrolled or unexpected termination of the program, else the final grade is 0. Use the appropriate flag.   
+ You should never have to edit any file except the configuration file if it exists. If you want to edit a file, take the time to explicit the reasons with the evaluated student and make sure both of you are okay with this.  
+- Check that there are only the requested files available in the git repository. If not, the evaluation stop here.  
+
 **Piscine Exam policy** 
 Exam Rules: 
 To participate in the Exam, you must be subscribed to both the project and the event (in the agenda).   
