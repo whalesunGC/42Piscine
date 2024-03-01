@@ -41,6 +41,8 @@ Clock out time: 1711hrs
 
 Day 5! Exam Day 
 Clock in time: 0815hrs  
-Clock out time:     
+Clock out time:1648hrs  
 
 -Nothing on my mind yet, just the anxiety of facing a 4hr exam without the internet.    
+-took longer than expected to create the header file and manage the environment variable in .zshrc. 
+-feeling the pressure from the lack of time with C00, moved to pointers in C01 for a bit.   

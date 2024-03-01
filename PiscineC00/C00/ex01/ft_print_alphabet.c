@@ -1,15 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 13:49:22 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/01 13:50:15 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/01 14:01:13 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/01 15:17:40 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c)
+#include <unistd.h>
+
+void	ft_print_alphabet(void)
 {
-	write(1, &c, 1);
+	int	i;
+	int	c;
+
+	i = 0;
+	while (i <= 25)
+	{
+		c = i + 97;
+		write(1, &c, 1);
+		i++;
+	}
 }

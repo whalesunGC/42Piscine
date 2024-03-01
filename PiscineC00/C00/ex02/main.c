@@ -1,15 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 13:49:22 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/01 13:50:15 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/01 15:39:18 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/01 15:42:29 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_putchar(char c)
+
+#include "ft_print_reverse_alphabet.c"
+
+void	ft_print_reverse_alphabet(void);
+
+int	main(void)
 {
-	write(1, &c, 1);
+	ft_print_reverse_alphabet();
 }
