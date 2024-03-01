@@ -31,6 +31,16 @@ Clock out time : 2100hrs
 
 Day 4!  
 Clock in time: 0912hrs 
-Clock out time: 
+Clock out time: 1711hrs
 
 -running on 3.5hrs of sleep after the brutal bike ride home last night. Decided not to pursue this foolhardy path to an early grave :P. 
+-spent today napping and doing evals for other. 
+-find it to be a great learning experience especially when I have yet to complete the assignments. It is important to know the questions and what are the important criteria that the bot will mark against.    
+-sociallized and interacted alot more today. Met and introduced myself to 13 new people! Learned alot about the people in this cohort, feeling more invested in this community. 
+-There was a convo about why the staff at 42SG will not answer basic questions like "why does my PC not have VScode or why is there a Japanese Keyboard installed by default?" This caused quite a bit of grief with the Pisciners. I didnt understand as well but after giving it some thought I think the rational is one of pragmatism. In future when we are out in the real world, we will be using systems that are not configured to our liking. A common problem for devs is the reliance on VSCode as their text editior. Well news flash!! That aint avaiable on headless systems running 90% of the internet. The requirement to instill problem solving skills and a up by your own bootstrap attitude is crucial to develop early. Just my hot take on the pedagogy.   
+
+Day 5! Exam Day 
+Clock in time: 0815hrs  
+Clock out time:     
+
+-Nothing on my mind yet, just the anxiety of facing a 4hr exam without the internet.    
