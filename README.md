@@ -56,7 +56,8 @@ AAR Exam C00
 
 Day 6!
 Clock in time: 1015hrs  
-Clock out time:
+Clock out time: 1720hrs
 
 -Rush00! Super lucky and got the supreme leader as my group IC. T**redacted** quicly setup a slack channel and officiated the procedures for the team project. He communicated reasonable and firm commitments for the group to exist, which made the path forward clear. Learned to clearly define milestones for the project early as a way to lead the conversation on contributions and create escape hatches for everyone to bow out.  
 -Spent alot of time in evalations today. Met D**redacted**u again which was a real joy. Seeing him work helps establish an idea of what good looks like in terms of setup and coding best practices. As an aside, the philosophical discussion is a wonder gift, hard to receive in kind for me.    
+-Rush00 cant compile for me for some reason I havent troubleshooted. The norm also produces header errors for .c files when before no such error was produced, weird.   
