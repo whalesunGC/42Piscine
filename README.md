@@ -46,3 +46,17 @@ Clock out time:1648hrs
 -Nothing on my mind yet, just the anxiety of facing a 4hr exam without the internet.    
 -took longer than expected to create the header file and manage the environment variable in .zshrc. 
 -feeling the pressure from the lack of time with C00, moved to pointers in C01 for a bit.   
+
+AAR Exam C00
+-Lots of false errors from Pisciners here. From failed login, not starting examshell and confusion on login post running examshell. Think it makes sense to prepare a small help reminder markdown and pin it.  
+-Got to problem #5 by sheer doggedness and looking at local sample code.    
+-Totally stuck at ft_putstr which required knowledge I did not have.    
+-Tried a total of 7 times, by the 6th attempt the grademe window balloned to >30mins which is useful to know.   
+-Will recode my implementations here for upload after Rush00, leaving it as practice and for the progeny.   
+
+Day 6!
+Clock in time: 1015hrs  
+Clock out time:
+
+-Rush00! Super lucky and got the supreme leader as my group IC. T**redacted** quicly setup a slack channel and officiated the procedures for the team project. He communicated reasonable and firm commitments for the group to exist, which made the path forward clear. Learned to clearly define milestones for the project early as a way to lead the conversation on contributions and create escape hatches for everyone to bow out.  
+-Spent alot of time in evalations today. Met D**redacted**u again which was a real joy. Seeing him work helps establish an idea of what good looks like in terms of setup and coding best practices. As an aside, the philosophical discussion is a wonder gift, hard to receive in kind for me.    
