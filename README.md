@@ -70,4 +70,7 @@ Clock out time:
 
 -Came into the campus with 3 evals for today! yay! the tactic to leave slots the day before open has proven useful. 
 -I will then close my window if I am satisfied with my evaluator workload for the day :).   
+
+ -Completed Rush00 with the team virtually. Boss T**redacted** created a Discord Channel for us to sync up. Its superior to Zoom for our usecase as it can be used fully featured on a Web Browser. That means video calls and screen share on 42 computers. Genius!    
+
  
