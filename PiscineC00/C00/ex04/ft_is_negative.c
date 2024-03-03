@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 15:39:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 12:43:39 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/03 14:14:45 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/03 14:28:15 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
+#include <unistd.h>
 
-int	main(void)
+void	ft_is_negative(int n)
 {
-	ft_print_reverse_alphabet();
+	if (n >= 0)
+	{
+		write(1, "P", 1);
+	}
+	else
+	{
+		write(1, "N", 1);
+	}
 }

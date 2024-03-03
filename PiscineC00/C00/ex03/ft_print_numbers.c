@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 15:39:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 12:43:39 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/03 12:45:30 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/03 14:56:47 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
+#include <unistd.h>
 
-int	main(void)
+void	ft_print_numbers(void)
 {
-	ft_print_reverse_alphabet();
+	char	c;
+	int	i;
+
+	i = 0;
+	while (i <= 9)
+	{
+		c = i + '0';
+		write(1, &c, 1);
+		i++;
+	}
 }

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 15:39:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 12:43:39 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/03 12:46:19 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/03 12:50:44 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void);
+void	ft_print_numbers(void);
 
 int	main(void)
 {
-	ft_print_reverse_alphabet();
+	ft_print_numbers();
 }
