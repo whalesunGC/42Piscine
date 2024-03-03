@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 12:45:30 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 14:56:47 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/03 15:25:13 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_print_numbers(void)
 {
-	char	c;
+	int	c;
 	int	i;
 
 	i = 0;
