@@ -56,8 +56,18 @@ AAR Exam C00
 
 Day 6!
 Clock in time: 1015hrs  
-Clock out time: 1720hrs
+Clock out time: 1720hrs 
 
 -Rush00! Super lucky and got the supreme leader as my group IC. T**redacted** quicly setup a slack channel and officiated the procedures for the team project. He communicated reasonable and firm commitments for the group to exist, which made the path forward clear. Learned to clearly define milestones for the project early as a way to lead the conversation on contributions and create escape hatches for everyone to bow out.  
 -Spent alot of time in evalations today. Met D**redacted**u again which was a real joy. Seeing him work helps establish an idea of what good looks like in terms of setup and coding best practices. As an aside, the philosophical discussion is a wonder gift, hard to receive in kind for me.    
 -Rush00 cant compile for me for some reason I havent troubleshooted. The norm also produces header errors for .c files when before no such error was produced, weird.   
+
+Day 7
+Clock in time: 0900hrs  
+Clock out time: 
+
+-**Thought about rushing in the mornings this week. Realized I have been abrasive to my family and strangers during the morning rush to campus. Part of it is the adrenaline from being in a competitive entrance exam, another is nerves. Giving it some thought this morning as I rode my bicycle to the train station, that my frustrations with pedestrians etc ,people that get in MY WAY, are real but misguided. It puts me in a sour mood that simply spreads animosity, since people are important to me I want to be respectful to everyone. The world does not revolve around the individual, we merely exist within it.**   
+
+-Came into the campus with 3 evals for today! yay! the tactic to leave slots the day before open has proven useful. 
+-I will then close my window if I am satisfied with my evaluator workload for the day :).   
+ 
