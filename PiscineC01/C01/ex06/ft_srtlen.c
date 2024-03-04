@@ -1,16 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_srtlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/01 15:46:30 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/04 16:42:29 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/04 16:46:49 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *nbr)
+#include <unistd.h>
+
+int	ft_strlen(char *str)
 {
-	*nbr = 42;
+	int	count;
+
+	count = 0;
+	while (*str != 0)
+	{
+		count++;
+		str++;
+	}
+	count = count + '0';
+	write(1, &count, 1);
+	return (count);
 }
