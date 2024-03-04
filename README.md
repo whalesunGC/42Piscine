@@ -76,7 +76,12 @@ Clock out time: 1600hrs
 
  Day 8 WK01
  Clock in time: 0820hrs 
- Clock out time:
+ Clock out time: 1900hrs
 
  -We have booked out Rush00 defence on the first slot, which is 1300hrs today.  
- -I will focus on pushing C01 today and starting with C02.  
+ -I will focus on pushing C01 today and starting with C02. 
+ -Cleared Rush00 with the fantastic team, couldnt ask for more from them.   
+ -T**redacted** was our evaluator and he made two great points with regard to the 42 pedogogy.  
+ -"Play with your code" 
+ -"Do not write code you do not understand" 
+ -This is to ensure we really know what the functions we call are doing under the hood. 
