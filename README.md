@@ -93,3 +93,8 @@ Clock out time: 1600hrs
 -Goals for today: 1) Submit C01 2) Finish C02 3) Start C03  
 -Submitted C01, somehow local tests pass but it fails to compile on Fr Server?? 
 -Moving on to C02   
+-Actually not too bad, C02 really tests our ability to build on previous functions. 
+-The key here is ASCII table familiarity(Deci and Hex systems) and string manipulation. 
+-Spend the better part of the day working through ex00 - ex10.  
+-Will push for evaluation now, currently 1750hrs.  
+-Decided to focus on testing and reading C03 for tomorrow.    

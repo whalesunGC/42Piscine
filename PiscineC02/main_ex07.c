@@ -1,45 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*   main_ex07.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 17:37:38 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 17:53:52 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 18:24:00 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 18:24:41 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	count;
+int	ft_strlen(char *str);
+char	*ft_strupcase(char *str);
 
-	count = 0;
-	while (*str != '\0')
-	{
-		count++;
-		str++;
-	}
-	return (count);
+#include <stdio.h>
+
+int main()
+{
+    // Test ft_strupcase
+    char str[] = "Hello, World!";
+    
+    printf("Original: %s\n", str);
+    ft_strupcase(str);
+    printf("Uppercase: %s\n", str);
+
+    return 0;
 }
-
-int	ft_str_is_printable(char *str)
-{
-	int	i;
-	int	str_size;
-
-	i = 0;
-	str_size = ft_strlen(str);
-	while (i < str_size)
-	{
-		if (str[i] < ' ' || str[i] > '~' )
-			return (0);
-		i++;
-	}
-	return (1);
-}
-
-/*void	ft_putstr_non_printable(char *str)
-{
-	
-}*/

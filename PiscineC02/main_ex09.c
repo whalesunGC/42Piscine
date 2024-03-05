@@ -1,45 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*   main_ex09.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/05 17:37:38 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 17:53:52 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 18:26:12 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 18:27:31 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	count;
+#include <stdio.h>
 
-	count = 0;
-	while (*str != '\0')
-	{
-		count++;
-		str++;
-	}
-	return (count);
+int	ft_strlen(char *str);
+char	*ft_strcapitalize(char *str);
+
+int main()
+{
+    // Test ft_strcapitalize
+    char test_str[] = "capitalize the first letter of each word";
+
+    printf("Before: %s\n", test_str);
+    ft_strcapitalize(test_str);
+    printf("After: %s\n", test_str);
+
+    return 0;
 }
-
-int	ft_str_is_printable(char *str)
-{
-	int	i;
-	int	str_size;
-
-	i = 0;
-	str_size = ft_strlen(str);
-	while (i < str_size)
-	{
-		if (str[i] < ' ' || str[i] > '~' )
-			return (0);
-		i++;
-	}
-	return (1);
-}
-
-/*void	ft_putstr_non_printable(char *str)
-{
-	
-}*/
