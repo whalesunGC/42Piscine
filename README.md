@@ -74,9 +74,9 @@ Clock out time: 1600hrs
 
  -Completed Rush00 with the team virtually. Boss T**redacted** created a Discord Channel for us to sync up. Its superior to Zoom for our usecase as it can be used fully featured on a Web Browser. That means video calls and screen share on 42 computers. Genius!    
 
- Day 8 WK01
+ Day 8 WK01 
  Clock in time: 0820hrs 
- Clock out time: 1900hrs
+ Clock out time: 1900hrs    
 
  -We have booked out Rush00 defence on the first slot, which is 1300hrs today.  
  -I will focus on pushing C01 today and starting with C02. 
@@ -85,3 +85,10 @@ Clock out time: 1600hrs
  -"Play with your code" 
  -"Do not write code you do not understand" 
  -This is to ensure we really know what the functions we call are doing under the hood. 
+
+ Day 9 WK01 
+ Clock in time: 0850hrs 
+ Clock out time:    
+
+-Goals for today: 1) Submit C01 2) Finish C02 3) Start C03  
+-
