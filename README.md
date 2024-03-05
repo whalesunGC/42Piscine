@@ -91,4 +91,5 @@ Clock out time: 1600hrs
  Clock out time:    
 
 -Goals for today: 1) Submit C01 2) Finish C02 3) Start C03  
--
+-Submitted C01, somehow local tests pass but it fails to compile on Fr Server?? 
+-Moving on to C02   

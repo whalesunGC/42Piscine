@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_srtlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 10:10:10 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 15:58:01 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 16:11:39 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,4 +21,27 @@ int	ft_strlen(char *str)
 		str++;
 	}
 	return (count);
+}
+
+char	*ft_strcapitalize(char *str)
+{
+	int	i;
+	int	size;
+
+	i = 0;
+	size = ft_strlen(str);
+	while (i < size)
+	{
+		if (i == 0 || str[i - 1] == ' ')
+		{
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				str[i] = str[i] - 32;
+				i++;
+			}
+			else
+				i++;
+		}
+	}
+	return (str);
 }

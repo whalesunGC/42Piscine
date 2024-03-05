@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_srtlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 10:10:10 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 12:08:00 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 12:47:58 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,4 +21,19 @@ int	ft_strlen(char *str)
 		str++;
 	}
 	return (count);
+}
+
+char	*ft_strcpy(char *dest, char *src)
+{
+	int	src_size;
+	int	i;
+
+	src_size = ft_strlen(src);
+	i = 0;
+	while (i <= src_size)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	return (dest);
 }

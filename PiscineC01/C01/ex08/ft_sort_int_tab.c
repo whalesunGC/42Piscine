@@ -1,26 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_srtlen.c                                        :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 10:10:10 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 09:27:22 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 10:22:04 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+//Implement some sorting algo. Will try bubble, index and quick sort
 
-int	ft_strlen(char *str)
+/*void	ft_sort_int_tab(int *tab, int size)
 {
-	int	count;
-
-	count = 0;
-	while (*str != '\0')
-	{
-		count++;
-		str++;
-	}
-	return (count);
-}
+}*/

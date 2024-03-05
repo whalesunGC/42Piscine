@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_srtlen.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 10:10:10 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 15:34:59 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 15:54:54 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,4 +21,20 @@ int	ft_strlen(char *str)
 		str++;
 	}
 	return (count);
+}
+
+char	*ft_strupcase(char *str)
+{
+	int	i;
+	int	size;
+
+	i = 0;
+	size = ft_strlen(str);
+	while (i < size)
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] = str[i] - 32;
+		i++;
+	}
+	return (str);
 }

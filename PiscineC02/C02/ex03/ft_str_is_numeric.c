@@ -1,16 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_srtlen.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/04 12:52:57 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 10:10:10 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/05 15:25:23 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/05 15:25:39 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,4 +21,20 @@ int	ft_strlen(char *str)
 		str++;
 	}
 	return (count);
+}
+
+int	ft_str_is_numeric(char *str)
+{
+	int	i;
+	int	str_size;
+
+	i = 0;
+	str_size = ft_strlen(str);
+	while (i < str_size)
+	{
+		if ((str[i] < '0') || (str[i] > '9'))
+			return (0);
+		i++;
+	}
+	return (1);
 }
