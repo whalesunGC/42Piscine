@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:58:01 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 16:11:39 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/06 07:37:18 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ char	*ft_strcapitalize(char *str)
 			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] = str[i] - 32;
-				i++;
 			}
-			else
-				i++;
+			i++;
 		}
+		else
+			i++;
 	}
 	return (str);
 }

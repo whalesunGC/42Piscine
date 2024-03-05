@@ -6,9 +6,10 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 18:06:09 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 18:16:11 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/06 07:15:51 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
 int	ft_strlen(char *str);
 int	ft_str_is_alpha(char *str);

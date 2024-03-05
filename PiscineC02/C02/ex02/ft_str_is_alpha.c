@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 15:03:46 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/05 18:53:43 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/06 07:23:29 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!ft_charupper(str, i) || !ft_charlower(str, i))
+		if (!ft_charupper(str, i) && !ft_charlower(str, i))
 			return (0);
 		i++;
 	}
