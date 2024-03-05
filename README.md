@@ -98,3 +98,10 @@ Clock out time: 1600hrs
 -Spend the better part of the day working through ex00 - ex10.  
 -Will push for evaluation now, currently 1750hrs.  
 -Decided to focus on testing and reading C03 for tomorrow.    
+
+Day 10 WK01 
+ Clock in time:hrs 
+ Clock out time:hrs 
+
+ -Gonna be later today, did testing of C01 on the personal system. Pushing up to repo and will pull it later for upload to intra.   
+ -For some reason the .md file is edited in VIM on my local VSCODE, curious...  
