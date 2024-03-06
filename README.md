@@ -100,8 +100,9 @@ Clock out time: 1600hrs
 -Decided to focus on testing and reading C03 for tomorrow.    
 
 Day 10 WK01 
- Clock in time:hrs 
- Clock out time:hrs 
+ Clock in time: 1351hrs   
+ Clock out time:1900hrs 
 
  -Gonna be later today, did testing of C01 on the personal system. Pushing up to repo and will pull it later for upload to intra.   
  -For some reason the .md file is edited in VIM on my local VSCODE, curious...  
+- Found out what "Misaligned variable declaration" means. I always get this error when declaring different data types. The code will compile but norm doesnt like it. Turns out the column of the var name needs to be the same, go figure! 
