@@ -106,3 +106,9 @@ Day 10 WK01
  -Gonna be later today, did testing of C01 on the personal system. Pushing up to repo and will pull it later for upload to intra.   
  -For some reason the .md file is edited in VIM on my local VSCODE, curious...  
 - Found out what "Misaligned variable declaration" means. I always get this error when declaring different data types. The code will compile but norm doesnt like it. Turns out the column of the var name needs to be the same, go figure! 
+
+Day 11 WK01    
+ Clock in time: 0900hrs   
+ Clock out time:1800hrs 
+ 
+-Goals for today : C03 Submission , C04 Submission, Start C05.
