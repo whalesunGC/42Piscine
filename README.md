@@ -114,3 +114,4 @@ Clock out time:1800hrs
 
 -Goals for today : C03 Submission , C04 Submission, Start C05.  
 -Side note, managed to extract the photos and videos from my iPhone backup. Saving me alot of grief! I found a repo written in java that does the job cleanly and its opensource!   
+-S**Redacted** Chicken Rice stall starts selling 0950hrs onwards!   

@@ -6,14 +6,14 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 16:10:21 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/06 17:04:50 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/07 12:18:38 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int				i;
 	int				delta;
+	unsigned char	i;
 	unsigned char	*str1;
 	unsigned char	*str2;
 

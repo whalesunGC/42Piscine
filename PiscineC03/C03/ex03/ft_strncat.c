@@ -6,15 +6,15 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 17:30:31 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/06 17:44:47 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/07 12:25:17 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	i;
-	int	j;
-	int	k;
+	int				i;
+	int				j;
+	unsigned int	k;
 
 	i = 0;
 	j = 0;

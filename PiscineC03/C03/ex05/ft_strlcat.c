@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/06 17:43:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/07 15:40:05 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/07 11:29:26 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/07 15:33:27 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int		i;
-	int		j;
-	char	*index;
+	int				i;
+	int				j;
+	unsigned int	len;
 
-	void *NULL;
 	i = 0;
-	NULL = (void *)0;
-	if (str == NULL || to_find == NULL)
-		return (NULL);
-	while (str[i] != '\0')
-	{
-		j = 0;
-		while (to_find[j] != '\0' || to_find[j] == str[i + j])
-			j++;
-		if (to_find[j] == '\0')
-		{
-			index = &str[(i - j -1)];
-			return (index);
-		}
+	j = 0;
+	len = 0;
+	while (dest[i] != '\0')
 		i++;
+	while (src[j] != '\0' && len < size)
+	{
+		dest[i] = src[j];
+		j++;
+		len++;
 	}
-	return (NULL);
+	if (src[j] != '\0')
+		return (size);
+	dest[i] = '\0';
+	return (i + j);
 }
