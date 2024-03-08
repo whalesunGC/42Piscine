@@ -1,47 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 16:06:47 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/08 11:22:36 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/08 13:47:14 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/08 13:48:49 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_intlen(int *nb)
+int	main(int argc, char *argv[])
 {
-	int	len;
-	int	*temp;
+	int	i;
+	int	j;
 
-	len = 0;
-	temp = *nb;
-	if (nb == NULL)
-		return (-1);
-	if (temp == 0)
-		return (1);
-	if (*temp < 0)
-		*temp *= -1;
-	while (temp != 0)
+	i = 1;
+	while (i < argc)
 	{
-		temp = temp / 10;
-		len++;
+		j = 0;
+		while (argv[i][j] != '\0')
+		{
+			write(1, &argv[i][j], 1);
+			j++;
+		}
+		write(1, "\n", 1);
+		i++;
 	}
-	return (len);
+	return (0);
 }
-
-void	ft_putnbr(int nb)
-{
-	int		*ptr;
-	char	number;
-
-	ptr = &nb;
-	number = (char)nb;
-	if (nb < 0)
-		write(1, '-', 1);
-		write(1, '-' &nb, ft_intlen(ptr));
-	else
-		write(1, &nb, ft_intlen(ptr));
