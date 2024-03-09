@@ -122,3 +122,10 @@ Clock in time: 1035hrs
 Clock out time:1745hrs  
 
 -Goals : C04-ex03 C05-ex02 C06 by 1400hrs.     
+
+**Day 13 WK01** 
+Clock in time: 0949hrs   
+Clock out time:hrs  
+
+-Exam was frustrating, spent 2.5hrs on ft_atoi. It really showed the gaps in my knowledge on syntax and pointers. Especially int and char comparisions. How to do it effectively, efficiently and without tons of variable. Useful to have failed there, time to improve. Fail fast, fail forwad.   
+-Managing Rush01 will be interesting, lets see how this goes... lol 
