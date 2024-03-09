@@ -129,3 +129,9 @@ Clock out time:hrs
 
 -Exam was frustrating, spent 2.5hrs on ft_atoi. It really showed the gaps in my knowledge on syntax and pointers. Especially int and char comparisions. How to do it effectively, efficiently and without tons of variable. Useful to have failed there, time to improve. Fail fast, fail forwad.   
 -Managing Rush01 will be interesting, lets see how this goes... lol 
+-My other takeaways from the exam.  
+(1) Learn printf and stdio.h for testing.   
+(2) Practice writing tests from scratch.    
+(3) Initializing strings into a char array. 
+-Learning malloc today from AI chatbots, I find asking them conceptual questions to be much faster than using stackoverflow or reddit.  The answers tend to be formatted and written far clearer. There is something to be said about the hallucination though. I have already experienced GPT providing code that made errorneous assumptions from my input.   
+-malloc is an interesting toy, it introduced the idea of different memory types in c, stacked, heap and static. The fundamentals concept is fairly interesting. Why did the authors decide to have the ability to allocate memory at runtime vs compile? Why the need for memory management? Dynamic memory allocation is useful clearly for unknown input sizes / data, especially in tree searches or data input. 
