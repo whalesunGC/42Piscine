@@ -135,3 +135,19 @@ Clock out time:hrs
 (3) Initializing strings into a char array. 
 -Learning malloc today from AI chatbots, I find asking them conceptual questions to be much faster than using stackoverflow or reddit.  The answers tend to be formatted and written far clearer. There is something to be said about the hallucination though. I have already experienced GPT providing code that made errorneous assumptions from my input.   
 -malloc is an interesting toy, it introduced the idea of different memory types in c, stacked, heap and static. The fundamentals concept is fairly interesting. Why did the authors decide to have the ability to allocate memory at runtime vs compile? Why the need for memory management? Dynamic memory allocation is useful clearly for unknown input sizes / data, especially in tree searches or data input. 
+
+**Day 14 WK02** 
+Clock in time: NAhrs   
+Clock out time:NAhrs
+
+-food poisining from rancid peanuts. GG.    
+-rested at home for the day.
+
+**Day 15 WK02**
+Clock in time: 1335hrs  
+Clock out time: hrs 
+
+-Decided to work from home today instead of going down to campus.      
+-Better get a mid Piscine reset sooner than later.  
+-Did as much of my overdue chores/tasks/projects as I can.   
+-Will focus on clearing the backlog C01 today and trying our the mini-minonette program locally.    
