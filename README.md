@@ -154,6 +154,8 @@ Clock out time: hrs
 
 **Day 16 WK02**
 Clock in time: 0830hrs  
-Clock out time: hrs 
+Clock out time: 1955hrs 
 
--Cont'd with C00 ex05, plans for yesterday fell thru.   
+-cont'd with C00 ex05, plans for yesterday fell thru.   
+-did CC00 ex05 - ex07.
+-took longer than expected argh.... 
