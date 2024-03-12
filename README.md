@@ -150,4 +150,10 @@ Clock out time: hrs
 -Decided to work from home today instead of going down to campus.      
 -Better get a mid Piscine reset sooner than later.  
 -Did as much of my overdue chores/tasks/projects as I can.   
--Will focus on clearing the backlog C01 today and trying our the mini-minonette program locally.    
+-Will focus on clearing the backlog C00 today and trying our the mini-minonette program locally.    
+
+**Day 16 WK02**
+Clock in time: 0830hrs  
+Clock out time: hrs 
+
+-Cont'd with C00 ex05, plans for yesterday fell thru.   
