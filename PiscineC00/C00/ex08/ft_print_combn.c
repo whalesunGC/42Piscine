@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/13 13:01:23 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/13 13:18:36 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/13 18:33:54 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,5 @@ void	ft_print_combn(int n)
 	int	arr[10];
 
 	if (n > 0 && n < 10)
-	{
 		ft_recursive_combn(arr, n, 0, -1);
-		write(1, "\n", 1);
-	}
 }

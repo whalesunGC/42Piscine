@@ -159,3 +159,10 @@ Clock out time: 1955hrs
 -cont'd with C00 ex05, plans for yesterday fell thru.   
 -did CC00 ex05 - ex07.
 -took longer than expected argh.... 
+
+**Day 17 WK02**
+Clock in time: 0915hrs  
+Clock out time: 2130hrs 
+
+-started the day with C00ex08, gettin hit by the enormous wall. Needs recursion.   i
+-cleaned up C00 and C03 again, made multiple tries to clear the errors.   

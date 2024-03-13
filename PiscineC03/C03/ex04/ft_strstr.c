@@ -6,9 +6,11 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 17:43:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/07 15:40:05 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/13 17:41:03 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
+#define NULL42 ((void*)0)
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -16,22 +18,20 @@ char	*ft_strstr(char *str, char *to_find)
 	int		j;
 	char	*index;
 
-	void *NULL;
 	i = 0;
-	NULL = (void *)0;
-	if (str == NULL || to_find == NULL)
-		return (NULL);
+	if (str == NULL42 || to_find == NULL42)
+		return (NULL42);
 	while (str[i] != '\0')
 	{
 		j = 0;
-		while (to_find[j] != '\0' || to_find[j] == str[i + j])
+		while (to_find[j] != '\0' && to_find[j] == str[i + j])
 			j++;
 		if (to_find[j] == '\0')
 		{
-			index = &str[(i - j -1)];
+			index = &str[(i)];
 			return (index);
 		}
 		i++;
 	}
-	return (NULL);
+	return (NULL42);
 }
