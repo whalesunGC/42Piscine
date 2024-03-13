@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 16:10:21 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/13 18:10:53 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/14 00:29:27 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,21 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned char	*str1;
 	unsigned char	*str2;
 
-	i = 1;
-	while (*s1 && (*s1 == *s2) && i < n)
+	i = 0;
+	while (s1[i] && s2[i] && (s1[i] == s2[i]) && i < n)
 	{
-		s1++;
-		s2++;
 		i++;
 	}
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
+	if (i == n)
+	{
+		str1 = (unsigned char *)&s1[i - 1];
+		str2 = (unsigned char *)&s2[i - 1];
+	}
+	else
+	{
+		str1 = (unsigned char *)&s1[i];
+		str2 = (unsigned char *)&s2[i];
+	}
 	delta = *str1 - *str2;
 	return (delta);
 }

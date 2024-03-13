@@ -72,8 +72,3 @@ void	ft_print_comb2(void)
 	d3 = 1;
 	ft_loop_4digits(d0, d1, d2, d3);
 }
-
-int	main(void)
-{
-	ft_print_comb2();
-}

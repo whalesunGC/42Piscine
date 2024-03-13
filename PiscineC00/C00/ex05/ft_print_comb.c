@@ -56,8 +56,3 @@ void	ft_print_comb(void)
 		digit0++;
 	}
 }
-
-int	main(void)
-{
-	ft_print_comb();
-}

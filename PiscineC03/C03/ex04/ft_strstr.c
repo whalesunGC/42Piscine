@@ -9,8 +9,6 @@
 /*   Updated: 2024/03/13 17:41:03 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
-#define NULL42 ((void*)0)
 
 char	*ft_strstr(char *str, char *to_find)
 {
@@ -19,8 +17,8 @@ char	*ft_strstr(char *str, char *to_find)
 	char	*index;
 
 	i = 0;
-	if (str == NULL42 || to_find == NULL42)
-		return (NULL42);
+	if (str == NULL || to_find == NULL)
+		return (NULL);
 	while (str[i] != '\0')
 	{
 		j = 0;
@@ -33,5 +31,5 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		i++;
 	}
-	return (NULL42);
+	return (NULL);
 }

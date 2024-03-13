@@ -164,5 +164,12 @@ Clock out time: 1955hrs
 Clock in time: 0915hrs  
 Clock out time: 2130hrs 
 
--started the day with C00ex08, gettin hit by the enormous wall. Needs recursion.   i
+-started the day with C00ex08, gettin hit by the enormous wall. Needs recursion.   
 -cleaned up C00 and C03 again, made multiple tries to clear the errors.   
+
+**Day 18 WK02**
+Clock in time: 0440hrs  
+Clock out time: hrs 
+-was productive the past 2 days, imho.  Been frustrated with the eval and failure loops that burns time. Realizing that the learning changes in these loops. I learn about my carelessness in shipping code, lack of adequate testing and fatigue from jumping through questions making more unforced errors.   
+-The precision of the learning is also tested with similar concepts in different forms. It asks "Do you really know what is being communicated to the compiler?"    
+-Blizting through the problems is an effective strategy to cover ground before an exam. But to do well holistically, it requires optimizing my creation process. TDD may be the answer to this since the pain from eval loops come from the long cycles of feedback.    
