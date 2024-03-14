@@ -6,42 +6,63 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 16:06:47 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/08 11:22:36 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/14 20:21:52 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_intlen(int *nb)
+int	ft_num_len(int nb)
 {
-	int	len;
-	int	*temp;
+	int	count;
 
-	len = 0;
-	temp = *nb;
-	if (nb == NULL)
-		return (-1);
-	if (temp == 0)
-		return (1);
-	if (*temp < 0)
-		*temp *= -1;
-	while (temp != 0)
+	count = 1;
+	while ((nb / 10) != 0)
 	{
-		temp = temp / 10;
-		len++;
+		nb /= 10;
+		count++;
 	}
-	return (len);
+	return (count);
+}
+
+void	ft_printnum(int i, int len, int nb)
+{
+	char	digit[10];
+
+	while (i < len)
+	{
+		digit[i] = nb % 10 + '0';
+		nb /= 10;
+		i++;
+	}
+	while (len > 0)
+	{
+		write(1, &digit[len -1], 1);
+		len--;
+	}
 }
 
 void	ft_putnbr(int nb)
 {
-	int		*ptr;
-	char	number;
+	int		len;
+	int		i;
 
-	ptr = &nb;
-	number = (char)nb;
-	if (nb < 0)
-		write(1, '-', 1);
-		write(1, '-' &nb, ft_intlen(ptr));
-	else
-		write(1, &nb, ft_intlen(ptr));
+	if (nb == -2147483648)
+	{
+		write (1, "-2147483648", 11);
+		return ;
+	}
+	else if (nb == 0)
+	{
+		write(1, "0", 1);
+		return ;
+	}
+	else if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	len = ft_num_len(nb);
+	i = 0;
+	ft_printnum(i, len, nb);
+}
