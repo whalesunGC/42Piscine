@@ -169,7 +169,16 @@ Clock out time: 2130hrs
 
 **Day 18 WK02**
 Clock in time: 0440hrs  
-Clock out time: hrs 
+Clock out time: 2000hrs 
 -was productive the past 2 days, imho.  Been frustrated with the eval and failure loops that burns time. Realizing that the learning changes in these loops. I learn about my carelessness in shipping code, lack of adequate testing and fatigue from jumping through questions making more unforced errors.   
 -The precision of the learning is also tested with similar concepts in different forms. It asks "Do you really know what is being communicated to the compiler?"    
 -Blizting through the problems is an effective strategy to cover ground before an exam. But to do well holistically, it requires optimizing my creation process. TDD may be the answer to this since the pain from eval loops come from the long cycles of feedback.    
+
+**Day 19 WK02**
+Clock in time: 0850hrs  
+Clock out time: 1700hrs 
+
+-Exam day, feeling anxious. Under prepared for sure, untouched malloc, and got stuck clear backlogs this week plus sickness.    
+-Resting yesterday was a good call, feel mental clarity today. Will need to lean in hard and focus on revision. 
+-Will take the first 2hrs to focus on C07 or Malloc. Get the gist down and complete some exercises. 
+-From 12pm - 5pm i will focus on revision, argc argv, recursion and usage of stdio for testing. 
