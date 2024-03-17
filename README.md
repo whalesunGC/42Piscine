@@ -186,3 +186,5 @@ Clock out time: 1700hrs
 Clock in time: 1223hrs  
 Clock out time: hrs 
 -Sunday extra time, planning to do evals today. Aim to clear up to C06. 
+-cleared evals to C04.
+-takes me about half a day to clear evals.   
