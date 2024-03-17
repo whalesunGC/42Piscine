@@ -1,33 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 11:29:26 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/17 15:46:14 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/13 18:54:08 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/17 16:00:03 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
-{
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	n;
+#include <unistd.h>
 
-	n = size;
+int	ft_atoi(char *str)
+{
+	int	result;
+	int	i;
+	int	sign;
+
+	result = 0;
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0' && n-- != 0)
-		i++;
-	while (src[j] != '\0' && (i + j) < size - 1)
+	sign = 1;
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 	{
-		dest[i + j] = src[j];
-		j++;
+		i++;
 	}
-	if (n == 0)
-		return (size);
-	dest[i + j] = '\0';
-	return (i + j);
+	while (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+		{
+			sign = sign * -1;
+		}
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		result = result * 10 + (str[i] - '0');
+		i++;
+	}
+	return (result * sign);
 }

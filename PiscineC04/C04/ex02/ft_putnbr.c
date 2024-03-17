@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 16:06:47 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/14 20:21:52 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/13 18:52:52 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/17 16:15:56 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	ft_putnbr(int nb)
 		write (1, "-2147483648", 11);
 		return ;
 	}
-	else if (nb == 0)
+	if (nb == 0)
 	{
 		write(1, "0", 1);
 		return ;

@@ -6,13 +6,13 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/06 17:43:18 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/14 11:16:16 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/17 15:45:14 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#ifndef NULL
-# define NULL (void *)0
+#ifndef NULL42
+# define NULL42 (void *)0
 #endif
 
 char	*ft_strstr(char *str, char *to_find)
@@ -22,8 +22,8 @@ char	*ft_strstr(char *str, char *to_find)
 	char	*index;
 
 	i = 0;
-	if (str == NULL || to_find == NULL)
-		return (NULL);
+	if (str == NULL42 || to_find == NULL42)
+		return (NULL42);
 	if (str[i] == '\0' && to_find[i] == '\0')
 		return (&str[i]);
 	while (str[i] != '\0')
@@ -38,5 +38,5 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		i++;
 	}
-	return (NULL);
+	return (NULL42);
 }

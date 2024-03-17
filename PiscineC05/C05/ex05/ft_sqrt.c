@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 11:29:26 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/17 15:46:14 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/17 17:21:24 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/17 18:41:56 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+int	ft_sqrt(int nb)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	n;
+	int	i;
 
-	n = size;
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0' && n-- != 0)
-		i++;
-	while (src[j] != '\0' && (i + j) < size - 1)
+	while (i * i < nb)
 	{
-		dest[i + j] = src[j];
-		j++;
+		if (i * i == nb)
+			return (i);
+		else
+			return (0);
+		i++;
 	}
-	if (n == 0)
-		return (size);
-	dest[i + j] = '\0';
-	return (i + j);
 }
