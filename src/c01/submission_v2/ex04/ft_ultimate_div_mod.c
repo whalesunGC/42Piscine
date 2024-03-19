@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
+/*   By: tlim-kuo <tlim-kuo@student.42singapore.sg  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/08 11:53:36 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/19 22:53:34 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/04 06:49:50 by tlim-kuo          #+#    #+#             */
+/*   Updated: 2024/03/05 19:17:49 by tlim-kuo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	int	factorial;
+	int	idiv;
+	int	imod;
 
-	if (nb == 0)
-		factorial = 1;
-	if (nb < 0)
-		return (0);
-	while (nb > 0)
-	{
-		factorial *= nb;
-		nb--;
-	}
-	return (factorial);
+	idiv = *a / *b;
+	imod = *a % *b;
+	*a = idiv;
+	*b = imod;
 }

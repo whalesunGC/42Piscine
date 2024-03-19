@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
+/*   By: tlim-kuo <tlim-kuo@student.42singapore.sg  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/08 11:53:36 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/19 22:53:34 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/04 06:59:58 by tlim-kuo          #+#    #+#             */
+/*   Updated: 2024/03/04 07:06:13 by tlim-kuo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	int	factorial;
+	int	index;
+	int	val;
 
-	if (nb == 0)
-		factorial = 1;
-	if (nb < 0)
-		return (0);
-	while (nb > 0)
+	index = 0;
+	val = 0;
+	while (index < (size / 2))
 	{
-		factorial *= nb;
-		nb--;
+		val = tab[index];
+		tab[index] = tab[(size - 1 - index)];
+		tab[(size - 1 - index)] = val;
+		index++;
 	}
-	return (factorial);
 }

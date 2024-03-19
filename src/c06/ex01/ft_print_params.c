@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
+/*   By: tlim-kuo <tlim-kuo@student.42singapor      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/08 11:53:36 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/19 22:53:34 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/14 21:20:05 by tlim-kuo          #+#    #+#             */
+/*   Updated: 2024/03/15 22:26:49 by tlim-kuo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_iterative_factorial(int nb)
-{
-	int	factorial;
+#include <unistd.h>
 
-	if (nb == 0)
-		factorial = 1;
-	if (nb < 0)
-		return (0);
-	while (nb > 0)
+void	ft_print(char *ch)
+{
+	int	len;
+
+	len = 0;
+	while (ch[len])
+		len++;
+	write(1, ch, len);
+	write(1, "\n", 1);
+}
+
+int	main(int argc, char *argv[])
+{
+	int	i;
+
+	i = 1;
+	while (i < argc)
 	{
-		factorial *= nb;
-		nb--;
+		ft_print(argv[i]);
+		i++;
 	}
-	return (factorial);
 }
