@@ -1,18 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/03 12:46:19 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 12:50:44 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/08 11:53:36 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/17 17:06:38 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_numbers(void);
-
-int	main(void)
+int	ft_iterative_factorial(int nb)
 {
-	ft_print_numbers();
+	int	factorial;
+
+	factorial = 1;
+	if (nb < 0)
+		return (0);
+	while (nb > 0)
+	{
+		factorial *= nb;
+		nb--;
+	}
+	return (factorial);
 }

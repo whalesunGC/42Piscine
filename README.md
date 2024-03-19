@@ -184,7 +184,18 @@ Clock out time: 1700hrs
 
 **Day 21 WK03** 
 Clock in time: 1223hrs  
-Clock out time: hrs 
+Clock out time: 1900hrs    
 -Sunday extra time, planning to do evals today. Aim to clear up to C06. 
 -cleared evals to C04.
 -takes me about half a day to clear evals.   
+
+**Day 22 WK03**
+Clock in time: 0822hrs  
+Clock out time: 2210hrs 
+-Targets, C00 Eval, C05Eval and C06 Eval.   
+
+**Day 23 WK03**
+Clock in time: 0830hrs     
+Clock out time: hrs 
+-cleared C06    
+-need to attempt the 10 Queens in C05   

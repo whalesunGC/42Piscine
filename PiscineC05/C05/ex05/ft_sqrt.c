@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/17 17:21:24 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/17 18:41:56 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/18 19:07:36 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@ int	ft_sqrt(int nb)
 	int	i;
 
 	i = 0;
-	while (i * i < nb)
+	while (i * i <= nb)
 	{
 		if (i * i == nb)
 			return (i);
-		else
-			return (0);
 		i++;
 	}
+	return (0);
 }

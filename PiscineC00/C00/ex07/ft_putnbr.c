@@ -6,7 +6,7 @@
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 17:38:33 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/14 20:18:38 by wichee           ###   ########.fr       */
+/*   Updated: 2024/03/13 16:28:22 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +50,6 @@ void	ft_putnbr(int nb)
 	if (nb == -2147483648)
 	{
 		write (1, "-2147483648", 11);
-		return ;
-	}
-	else if (nb == 0)
-	{
-		write(1, "0", 1);
 		return ;
 	}
 	else if (nb < 0)

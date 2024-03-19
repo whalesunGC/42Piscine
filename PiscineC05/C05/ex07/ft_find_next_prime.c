@@ -1,22 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/08 12:23:43 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/18 19:01:00 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/18 08:41:11 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/18 08:44:01 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_fibonacci(int index)
+int	ft_closest_sqroot(int nb)
 {
-	if (index < 0)
-		return (-1);
-	if (index == 0)
+	int	i;
+
+	i = 0;
+	while (i * i <= nb)
+		i++;
+	return (i - 1);
+}
+
+int	ft_is_prime(int nb)
+{
+	int	i;
+
+	i = 2;
+	if (nb < 2)
 		return (0);
-	if (index == 1)
-		return (1);
-	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
+	while (i <= ft_closest_sqroot(nb))
+	{
+		if (nb % i == 0)
+			return (0);
+		i++;
+	}
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	int	np;
+
+	np = nb + 1;
+	while (!ft_is_prime(np))
+		np++;
+	return (np);
 }

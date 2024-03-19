@@ -5,70 +5,58 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/12 10:55:35 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/12 16:02:27 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/18 18:18:45 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/18 18:22:12 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_num(int d0, int d1)
+void	ft_print(char ch)
 {
-	char	buffer;
-
-	buffer = d0 + '0';
-	write(1, &buffer, 1);
-	buffer = d1 + '0';
-	write(1, &buffer, 1);
+	write(1, &ch, 1);
 }
 
-void	ft_print_uno_comb(int d0, int d1, int d2, int d3)
+void	ft_print_num(int a, int b)
 {
-	if ((d2 * 10 + d3) > (d0 * 10 + d1))
+	ft_print('0' + a / 10);
+	ft_print('0' + a % 10);
+	ft_print(' ');
+	ft_print('0' + b / 10);
+	ft_print('0' + b % 10);
+	if (!(a == 98 && b == 99))
 	{
-		ft_print_num(d0, d1);
-		write(1, " ", 1);
-		ft_print_num(d2, d3);
-		if (!(d0 == 9 && d1 == 8 && d2 == 9 && d3 == 9))
-			write(1, ", ", 2);
-	}
-}
-
-void	ft_loop_4digits(int d0, int d1, int d2, int d3)
-{
-	d0 = 0;
-	while (d0 <= 9)
-	{
-		d1 = 0;
-		while (d1 <= 9)
-		{
-			d2 = 0;
-			while (d2 <= 9)
-			{
-				d3 = 1;
-				while (d3 <= 9)
-				{
-					ft_print_uno_comb(d0, d1, d2, d3);
-					d3++;
-				}
-				d2++;
-			}
-			d1++;
-		}
-		d0++;
+		ft_print(',');
+		ft_print(' ');
 	}
 }
 
 void	ft_print_comb2(void)
 {
-	int	d0;
-	int	d1;
-	int	d2;
-	int	d3;
+	int		first_int;
+	int		second_int;
 
-	d0 = 0;
-	d1 = 0;
-	d2 = 0;
-	d3 = 1;
-	ft_loop_4digits(d0, d1, d2, d3);
+	first_int = 0;
+	second_int = 0;
+	while (first_int <= 98 && second_int <= 99)
+	{
+		if (second_int <= 98)
+		{
+			second_int++;
+		}
+		else
+		{
+			first_int++;
+			second_int = first_int + 1;
+		}
+		if (second_int < 100)
+		{
+			ft_print_num(first_int, second_int);
+		}
+	}
+}
+
+int main(void)
+{
+	ft_print_comb2();
 }

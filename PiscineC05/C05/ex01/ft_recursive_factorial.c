@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/03 14:32:20 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/03 14:32:32 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/08 12:07:24 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/18 18:49:53 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_print_numbers(void)
+int	ft_recursive_factorial(int nb)
 {
-    char c;
-    int i;
-
-    i = 0;
-    while (i <= 9)
-    {
-        c = i + '0';
-        write(1, &c, 1);
-        i++;
-    }
+	if (nb < 0)
+		return (0);
+	if (nb == 1)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
 }
