@@ -1,47 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/18 08:41:11 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/20 11:29:30 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/20 17:33:29 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/20 23:08:21 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-int	ft_closest_sqroot(int nb)
-{
-	int	i;
+# define ABS(x) (x < 0) ? -x : x
 
-	i = 0;
-	while (i * i <= nb)
-		i++;
-	return (i - 1);
-}
-
-int	ft_is_prime(int nb)
-{
-	int	i;
-
-	i = 2;
-	if (nb < 2)
-		return (0);
-	while (i <= ft_closest_sqroot(nb))
-	{
-		if (nb % i == 0)
-			return (0);
-		i++;
-	}
-	return (1);
-}
-
-int	ft_find_next_prime(int nb)
-{
-	int	np;
-
-	np = nb + 1;
-	while (!ft_is_prime(np))
-		np++;
-	return (np);
-}
+#endif

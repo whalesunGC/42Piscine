@@ -196,6 +196,15 @@ Clock out time: 2210hrs
 
 **Day 23 WK03**
 Clock in time: 0830hrs     
-Clock out time: hrs 
+Clock out time: 1111hrs 
 -cleared C06    
 -need to attempt the 10 Queens in C05   
+-kept making small mistakes in C05, unable to clear it. 
+-will work on C07 at home overnight.    
+-plan for submission of c05 and c07 2mr morning, C08 after lunch.   
+
+**Day 24 WK03**
+Clock in times: 0830hrs 
+Clock out time: 0145hrs 
+-pushed to C08. Burnt many EPoints with C05 many silly mistakes.    
+-Hopefully clear Lvl6.  

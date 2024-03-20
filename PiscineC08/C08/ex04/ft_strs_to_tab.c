@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strs_to_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wichee <wichee@student.42singapore.sg      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/15 09:00:45 by wichee            #+#    #+#             */
-/*   Updated: 2024/03/20 15:57:26 by wichee           ###   ########.fr       */
+/*   Created: 2024/03/20 23:18:43 by wichee            #+#    #+#             */
+/*   Updated: 2024/03/21 01:08:22 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "ft_stock_str.h"
 
-int	ft_len(char *src)
+int	ft_strlen(char *str)
 {
-	unsigned int	len;
+	int	count;
 
-	len = 0;
-	while (*src != '\0')
-	{
-		src++;
-		len++;
-	}
-	return (len);
+	count = 0;
+	while (str[count])
+		count++;
+	return (count);
 }
 
 char	*ft_strdup(char *src)
@@ -31,7 +29,7 @@ char	*ft_strdup(char *src)
 	char			*cpy_str;
 	char			*cpy_ptr;
 
-	size_src = ft_len(src);
+	size_src = ft_strlen(src);
 	cpy_str = (char *)malloc(size_src + sizeof(char));
 	if (cpy_str == NULL)
 		return (NULL);
@@ -45,26 +43,23 @@ char	*ft_strdup(char *src)
 	*cpy_ptr = '\0';
 	return (cpy_str);
 }
-/*#include <stdio.h>
-int main(void)
+
+struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 {
-    char original[] = "Hello, world!";
-    char *duplicate;
+	t_stock_str	*tab;
+	int			i;
 
-    // Duplicate the string
-    duplicate = ft_strdup(original);
-
-    if (duplicate == NULL) {
-        printf("Memory allocation failed. Unable to duplicate string.\n");
-        return 1;
-    }
-
-    // Print original and duplicated strings
-    printf("Original string: %s\n", original);
-    printf("Duplicated string: %s\n", duplicate);
-
-    // Free the dynamically allocated memory
-    free(duplicate);
-
-    return 0;
-}*/
+	tab = (t_stock_str *)malloc(sizeof(t_stock_str) * ac + 1);
+	if (!tab)
+		return (NULL);
+	i = 0;
+	while (i < ac)
+	{
+		tab[i].size = ft_strlen(av[i]);
+		tab[i].str = av[i];
+		tab[i].copy = ft_strdup(av[i]);
+		i++;
+	}
+	tab[i].str = 0;
+	return (tab);
+}

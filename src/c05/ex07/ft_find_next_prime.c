@@ -6,7 +6,7 @@
 /*   By: tlim-kuo <tlim-kuo@student.42singapore.sg  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 22:11:12 by tlim-kuo          #+#    #+#             */
-/*   Updated: 2024/03/14 20:46:01 by tlim-kuo         ###   ########.fr       */
+/*   Updated: 2024/03/20 11:24:01 by wichee           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,9 @@ int	ft_find_next_prime(int nb)
 	else if (ft_check_prime(nb, 3))
 		return (nb);
 	return (ft_next_prime(nb));
+}
+#include <stdio.h>
+int main(void)
+{
+	printf("%d\n",ft_next_prime(3));
 }
